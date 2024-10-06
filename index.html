@@ -1,27 +1,119 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea ASIR Juan de Martino</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #6a0dad; /* Color de fondo morado */
-            color: white; /* Texto blanco para contraste */
-            text-align: center; /* Centrar texto */
-            padding: 50px; /* Espaciado interno */
-        }
-        h1 {
-            font-size: 36px; /* Tamaño del título */
-        }
-        p {
-            font-size: 24px; /* Tamaño del texto */
-        }
-    </style>
+  <style>
+  .bg-1 {
+    background-color: #0b3d91; /* Azul oscuro */
+    color: #ffffff;
+  }
+  .bg-2 {
+    background-color: #4169e1; /* Azul real */
+    color: #ffffff;
+  }
+  .bg-3 {
+    background-color: #add8e6; /* Azul claro */
+    color: #333333;
+  }
+  .bg-4 {
+    background-color: #2f2f2f; /* Gris oscuro */
+    color: #ffffff; /* Color de texto blanco */
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .btn-custom {
+    background-color: #4169e1; /* Azul real */
+    color: #ffffff;
+    border-color: #4169e1;
+  }
+
+  /* Estilo para la barra de navegación */
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px; /* Para dar tamaño de fuente */
+    letter-spacing: 5px; /* Espaciado entre letras */
+  }
+
+  .navbar-nav li a:hover {
+    color: #1abc9c !important; /* Color al pasar el mouse */
+  }
+
+  /* Margen personalizado */
+  .margin {
+    margin-bottom: 45px; /* Margen inferior */
+  }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+
 <body>
-    <h1>Tarea ASIR</h1>
-    <p>Juan de Martino</p>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Yo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">¿QUIÉN?</a></li>
+        <li><a href="#">¿QUÉ?</a></li>
+        <li><a href="#">¿DÓNDE?</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-1 text-center margin">
+  <h3>¿Quién Soy?</h3>
+  <img src="nueva_foto.jpg" class="img-responsive img-circle" alt="Foto Personal">
+  <h3>Soy estudiante</h3>
+  
+  <!-- Botón añadido -->
+  <a href="#" class="btn btn-custom btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Buscar
+  </a>
+</div>
+
+<div class="container-fluid bg-2 text-center margin">
+  <h3>¿Qué Soy?</h3>
+  <p>Estudiante de ASIR</p> <!-- Texto actualizado -->
+</div>
+
+<div class="container-fluid bg-3 text-center margin">
+  <h3>¿Dónde Encontrarme?</h3>
+  <p>Estudiando, mi casa, gym</p> <!-- Texto actualizado -->
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <p>Casa</p> <!-- Descripción de la imagen 1 -->
+    <img src="birds1.jpg" class="img-responsive" style="width:100%" alt="Imagen 1">
+  </div>
+  <div class="col-sm-4">
+    <p>Gym</p> <!-- Descripción de la imagen 2 -->
+    <img src="birds2.jpg" class="img-responsive" style="width:100%" alt="Imagen 2">
+  </div>
+  <div class="col-sm-4">
+    <p>Estudiando</p> <!-- Descripción de la imagen 3 -->
+    <img src="birds3.jpg" class="img-responsive" style="width:100%" alt="Imagen 3">
+  </div>
+</div>
+
+<!-- Footer añadido -->
+<footer class="container-fluid bg-4 text-center margin">
+  <p>Plantilla de Bootstrap hecha por <a href="https://www.w3schools.com" style="color: #ffffff;">www.w3schools.com</a></p>
+</footer>
+
+<!-- Scripts de Bootstrap y jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
-</html>
